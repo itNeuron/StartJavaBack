@@ -7,10 +7,10 @@ public class ConditionalStatement {
         }
 
         boolean isMaleGender = true;
-        if (isMaleGender == true) {
+        if (isMaleGender) {
             System.out.println("На тебе больше ответственности!");
         }
-        if (isMaleGender != true) {
+        if (!isMaleGender) {
             System.out.println("Здоровья тебе!");
         }
 
