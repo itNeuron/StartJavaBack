@@ -20,7 +20,7 @@ public class Cycle {
         int sumOdd = 0;
         do {
             if (b % 2 != 0) {
-                sumOdd = sumOdd + b;
+                sumOdd  += b;
             }
             b++;
         } while (b < 20);
