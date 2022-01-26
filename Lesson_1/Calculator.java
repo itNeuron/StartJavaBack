@@ -18,7 +18,7 @@ public class Calculator {
         } else if (operation == '^') {
             int c = a;
             for (int i = 1; i < b; i++) {
-                c = c * a;
+                c *= a;
             }
             System.out.print(c);
         } else {
