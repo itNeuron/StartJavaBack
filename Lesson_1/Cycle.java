@@ -11,7 +11,7 @@ public class Cycle {
         int j = 6;
         while (j >= -6) {
             System.out.print(j + " ");
-            j-=2;
+            j -= 2;
         }
         System.out.println("");
 
@@ -20,7 +20,7 @@ public class Cycle {
         int sumOdd = 0;
         do {
             if (b % 2 != 0) {
-                sumOdd  = sumOdd + b;
+                sumOdd += b;
             }
             b++;
         } while (b < 20);
