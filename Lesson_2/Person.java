@@ -21,7 +21,6 @@ public class Person {
         return null;
     }
 
-    /*идти, сидеть, бежать, говорить, учить Java*/
     String run() {
         return "go";
     }
