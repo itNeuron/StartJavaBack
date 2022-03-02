@@ -1,13 +1,8 @@
 public class Calculator {
 
-
     private int a;
     private int b;
-    String operation;
-
-    public int getA() {
-        return a;
-    }
+    private char operation;
 
     public void setA(int a) {
         if (a < 0 || a > 100) {
@@ -17,11 +12,6 @@ public class Calculator {
         }
     }
 
-
-    public int getB() {
-        return b;
-    }
-
     public void setB(int b) {
         if (b < 0 || b > 100) {
             System.out.println("Некорректное число. Введите другое");
@@ -29,15 +19,41 @@ public class Calculator {
             this.b = b;
         }
     }
-
-
-
-    public String getOperation() {
-        return operation;
+    public void setOperation(char operation) {
+        this.operation = operation;
     }
 
-    public void setOperation(String operation) {
-        this.operation = operation;
+    public void calcul() {
+        switch (operation) {
+            case '+':
+                System.out.println("Ответ: " + a + b);
+                break;
+            case '-':
+                System.out.println("Ответ: " + (a - b));
+                break;
+            case '*':
+                System.out.println("Ответ: " + a * b);
+                break;
+            case '/':
+                System.out.println("Ответ: " + a / b);
+                break;
+            case '%':
+                System.out.println("Ответ: " + a % b);
+                break;
+            case '^':
+                pow();
+                break;
+            default:
+                System.out.println("Введите допустимую мат. операцию!");
+        }
+    }
+
+    private void pow() {
+        int c = 1;
+        for (int i = 0; i < b; i++) {
+            c *= a;
+        }
+        System.out.println("Ответ: " + c);
     }
 }
 
