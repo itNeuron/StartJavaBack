@@ -10,25 +10,17 @@ public class GuessNumber {
         this.answer = answer;
     }
 
-    private int playerNum;
+    public boolean game(int playerNum) {
 
-    public void setPlayerNum(int playerNum) {
-        this.playerNum = playerNum;
-    }
-
-    public int getPlayerNum() {
-        return playerNum;
-    }
-
-    public void game() {
-        while (playerNum != answer) {
-            if (playerNum > answer) {
-                System.out.println("Ваше число (" + playerNum + ") больше того, что загадал компьютер!");
-            }
-            if (playerNum < answer) {
-                System.out.println("Ваше число (" + playerNum + ") меньше того, что загадал компьютер!");
-            }
-            break;
+        if (playerNum > answer) {
+            System.out.println("Ваше число (" + playerNum + ") больше того, что загадал компьютер!");
+            return false;
+        } else if (playerNum < answer) {
+            System.out.println("Ваше число (" + playerNum + ") меньше того, что загадал компьютер!");
+            return false;
+        } else {
+            System.out.println("Поздравляем, Вы одержали величайшую победу всех времён и народов!");
+            return true;
         }
     }
 }
