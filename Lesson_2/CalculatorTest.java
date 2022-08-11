@@ -7,7 +7,7 @@ public class CalculatorTest {
         Calculator calculatorOne = new Calculator();
 
         String d = "yes";
-        while (d.equals("yes")){
+        while (d.equals("yes")) {
             System.out.print("Введите первое число: ");
             int setA = scanner.nextInt();
             calculatorOne.setA(setA);
@@ -25,7 +25,7 @@ public class CalculatorTest {
             do {
                 System.out.println("Хотите продолжить вычисления? [yes/no]:");
                 d = scanner.next();
-            } while(!d.equals("yes") && !d.equals("no"));
+            } while (!d.equals("yes") && !d.equals("no"));
         }
 
         System.out.print("Калькулятор закрылся.");
