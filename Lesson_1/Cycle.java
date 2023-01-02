@@ -1,3 +1,5 @@
+package StartJava.Lesson_1;
+
 public class Cycle {
 
     public static void main(String[] args) {
@@ -16,14 +18,15 @@ public class Cycle {
         System.out.println("");
 
         // Подсчитайте с помощью цикла do-while сумму нечетных чисел от [10, 20]. Выведите ее на консоль
-        int b = 10;
+        int b = -10;
         int sumOdd = 0;
         do {
             if (b % 2 != 0) {
                 sumOdd += b;
             }
             b++;
-        } while (b < 20);
-        System.out.println(sumOdd);
+            System.out.println(sumOdd);
+        } while (b <= 21);
+        //System.out.println(sumOdd);
     }
 }

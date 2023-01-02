@@ -1,3 +1,5 @@
+package StartJava.Lesson_2;
+
 public class Calculator {
 
     private int a;
@@ -56,5 +58,3 @@ public class Calculator {
         System.out.println("Ответ: " + c);
     }
 }
-
-
