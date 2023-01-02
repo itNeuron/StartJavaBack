@@ -1,3 +1,5 @@
+package StartJava.Lesson_1;
+
 public class Variable {
 
     public static void main(String[] args) {
@@ -6,7 +8,7 @@ public class Variable {
         int ram = 16;
         long ssdGb = 811L;
         float displayDiagonal = 15.6F;
-        double gpuTi = 1_660;
+        double gpuTi = 1_650;
         char h = 'x';
         boolean like = true;
 
