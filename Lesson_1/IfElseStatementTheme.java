@@ -13,7 +13,6 @@ public class IfElseStatementTheme {
         } else {
             System.out.println("Есть куда рости!");
         }
-
         boolean isMaleGender = true;
         if (!isMaleGender) {
             System.out.println("Здоровья тебе!");
@@ -21,14 +20,12 @@ public class IfElseStatementTheme {
         if (isMaleGender) {
             System.out.println("На тебе больше ответственности!");
         }
-
         float height = 1.76f;
         if (height < 1.80f) {
             System.out.println("Средний рост!");
         } else {
             System.out.println("Иногда в автобусах неудобно сидеть!");
         }
-
         char firstLetterName = "A".charAt(0);
         if (firstLetterName == 'M') {
             System.out.println("Как название остановки метро");
