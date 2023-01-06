@@ -40,54 +40,55 @@ public class CyclesTheme {
         int b2 = -1;
         int c2 = 10;
         if (a2>b2&a2>c2&b2>c2) {
-            System.out.println("max  число а2");
-            System.out.println("min число с2");
             int max = a2;
             int min = c2;
+            System.out.println("max  число" + max);
+            System.out.println("min число" + min);
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
         } else if (b2>a2&b2>c2&a2>c2) {            
-            System.out.println("max  число b2");            
-            System.out.println("min число с2");
             int max = b2;
             int min = c2;
+            System.out.println("max  число" + max);
+            System.out.println("min число" + min);
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
         } else if (c2>a2&c2>b2&a2>b2) {
-            System.out.println("max  число c2");            
-            System.out.println("min число b2");
             int max = c2;
             int min = b2;
+            System.out.println("max  число" + max);
+            System.out.println("min число" + min);
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
         } else if (a2>b2&a2>c2&c2>b2) {
-            System.out.println("max  число a2");
-            System.out.println("min число b2");
             int max = a2;
             int min = b2;
+            System.out.println("max  число" + max);
+            System.out.println("min число" + min);
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
         } else if (b2>a2&b2>c2&c2>a2) {
-            System.out.println("max  число b2");
-            System.out.println("min число a2");
             int max = b2;
             int min = a2;
+            System.out.println("max  число" + max);
+            System.out.println("min число" + min);
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
         } else if (c2>a2&c2>b2&b2>a2) {
-            System.out.println("max  число c2");
-            System.out.println("min число a2");
             int max = c2;
             int min = a2;
+            System.out.println("max  число" + max);
+            System.out.println("min число" + min);
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
         }
+
 
 
         // TODO: 06.09.2022 3. Вывод реверсивного числа и суммы его цифр
@@ -98,10 +99,25 @@ public class CyclesTheme {
         //i. исходное число в обратном порядке
         //ii. сумму его цифр
         System.out.println("\nЗадание №3");
-        int a3 = 1234;
-        //while ( ) {
 
-        //}
+        int tishi, b3, sotni,c9, desjatki, edinizi;
+        int a3 = 1234;
+        int rev = 0, sum = 0;
+        while (a3>0) {
+            tishi = a3 /1000;
+            b3 = a3%1000;
+            sotni = a3 /100;
+            c9 = a3 % 100;
+            desjatki = (c9 / 10);
+            edinizi = (c9 % 10);
+            rev = edinizi *1000 + desjatki * 100 + sotni*10  + tishi ;
+            sum = edinizi  + desjatki + sotni  + tishi;
+            break;
+        }
+        System.out.println("Обратное число " + rev);
+        System.out.println("Сумма " +sum);
+
+
         // TODO: 06.09.2022 4. Вывод чисел на консоль в несколько строк
         //○ выведите с помощью for на консоль числа в полуинтервале [1, 24)
         //○ шаг итерации 2
