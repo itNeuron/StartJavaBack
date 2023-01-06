@@ -12,7 +12,7 @@ public class VariablesTheme {
         byte pcCore = 6;
         short c = 700;
         int memary = 756;
-        long frequency = 3200l;
+        long frequency = 3200L;
         float d = 5512.389887f;
         double f = 2888888888.333555d;
         char e = 'a';
@@ -70,7 +70,7 @@ public class VariablesTheme {
         byte g = 127;
         short k = 32_767;
         int h = 2_147_483_647;
-        long i = 9_223_372_036_854_775_807l;
+        long i = 9_223_372_036_854_775_807L;
         float l = 3.1455555f;
         double n = 3.1456552889656326d;
         System.out.println(g);
@@ -124,7 +124,6 @@ public class VariablesTheme {
         System.out.println(one = one - two);
         System.out.println(two = two + one);
 
-
         System.out.println("с помощью побитовой операции ^");
         System.out.println("Исходное число: " + one);
         System.out.println("Исходное число: " + two);
@@ -143,10 +142,6 @@ public class VariablesTheme {
         System.out.println("тренировка " + ne1);
         //2-10===1-01
         //перевести цифры в десятичные, отзеркалить их, перевести  в десятичные, прибавить десятые доли
-
-
-
-
 
         // TODO: 16.08.2022 6.Вывод символов и их кодов
         //○ создайте 5 переменных, присвоив им значения: 35, 38, 64, 94, 95
