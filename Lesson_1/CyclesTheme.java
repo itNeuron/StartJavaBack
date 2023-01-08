@@ -27,9 +27,8 @@ public class CyclesTheme {
                 a1++;
             }
             i++;
-            //System.out.println(sumX);System.out.println(sumY);
         } while (a1 <= 21);
-        System.out.println("В промежутке [-10, 21] сумма четных\n чисел = " + sumX + ", а нечетных = " + sumY);
+        System.out.println("В промежутке [-10, 21] сумма четных чисел = " + sumX + ",\n а нечетных = " + sumY);
 
         // TODO: 06.09.2022 2. Вывод чисел в интервале между (max и min)
         //○ даны значения 10, 5, -1
@@ -106,8 +105,8 @@ public class CyclesTheme {
         while (a3>0) {
             tishi = a3 /1000;
             b3 = a3%1000;
-            sotni = a3 /100;
-            c9 = a3 % 100;
+            sotni = b3 /100;
+            c9 = b3 % 100;
             desjatki = (c9 / 10);
             edinizi = (c9 % 10);
             rev = edinizi *1000 + desjatki * 100 + sotni*10  + tishi ;
@@ -131,6 +130,20 @@ public class CyclesTheme {
         //○ число нулей определяйте программно. Не считайте их в уме и не
         // пишите сами
         System.out.println("\nЗадание №4");
+        for (int i4=1;i4<24;i4+=2) {
+            System.out.print(i4 + "  ");
+            if (i4 < 9) {
+                System.out.print(" ");
+            }
+            if (i4 % 9 == 0 | i4 % 19 == 0) {
+                System.out.println();
+            }
+            if (i4 == 23) {
+                for (int a4 = 1; a4 <= 3; a4++) {
+                    System.out.print("0   ");
+                }
+            }
+        }
 
         // TODO: 06.09.2022 5. Проверка количества единиц на четность
         //○ дано число 3141591
