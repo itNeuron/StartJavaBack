@@ -173,8 +173,106 @@ public class CyclesTheme {
            ********** ####  $$
            ********** ###   $$$
            ********** ##    $$
-           ********** #     $*/
+           ********** #     $     */
         System.out.println("\nЗадание №6");
+        int i6;
+        for (i6 = 1; i6 < 51; i6++ ) {
+            System.out.print("*");
+            if (i6%10==0) {
+                System.out.println("");
+            }
+        }
+        System.out.println("");
+
+        int k6=0;
+        while (k6<5) {
+            if (k6==0) {
+                int z1 = 0;
+                while (z1<5) {
+                    System.out.print("#");
+                    z1++;
+                }
+                System.out.println("");
+            }
+            if (k6==1) {
+                int z2 = 0;
+                while (z2<4) {
+                    System.out.print("#");
+                    z2++;
+                }
+                System.out.println("");
+            }
+            if (k6==2) {
+                int z3 = 0;
+                while (z3<3) {
+                    System.out.print("#");
+                    z3++;
+                }
+                System.out.println("");
+            }
+            if (k6==3) {
+                int z4 = 0;
+                while (z4<2) {
+                    System.out.print("#");
+                    z4++;
+                }
+                System.out.println("");
+            }
+            if (k6==4) {
+                int z5 = 0;
+                while (z5<1) {
+                    System.out.print("#");
+                    z5++;
+                }
+                System.out.println("");
+            }
+            k6++;
+        }
+        System.out.println("");
+        int e6=0;
+        do {
+            if (e6==0) {
+                int y1 = 0;
+                while (y1<1) {
+                    System.out.print("$");
+                    y1++;
+                }
+                System.out.println("");
+            }
+            if (e6==1) {
+                int y2 = 0;
+                while (y2<2) {
+                    System.out.print("$");
+                    y2++;
+                }
+                System.out.println("");
+            }
+            if (e6==2) {
+                int y3 = 0;
+                while (y3<3) {
+                    System.out.print("$");
+                    y3++;
+                }
+                System.out.println("");
+            }
+            if (e6==3) {
+                int y4 = 0;
+                while (y4<2) {
+                    System.out.print("$");
+                    y4++;
+                }
+                System.out.println("");
+            }
+            if (e6==4) {
+                int y5 = 0;
+                while (y5<1) {
+                    System.out.print("$");
+                    y5++;
+                }
+                System.out.println("");
+            }
+            e6++;
+        } while (e6<5);
 
         // TODO: 06.09.2022 7. Отображение ASCII-символов
         //○ отобразите, используя for, данные столбцов Dec и Char (и названия
