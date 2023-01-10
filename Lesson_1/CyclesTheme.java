@@ -282,6 +282,23 @@ public class CyclesTheme {
         //ii. маленькие английские буквы, имеющие четные коды
         //○ данные каждого столбца должны быть выровнены по правому краю
         System.out.println("\nЗадание №7");
+        System.out.println("Dec        Char");
+        for (int i7 = 1; i7 <= 47; i7+=2) {
+            if (i7<10) {
+                System.out.print(i7 + "           ");
+            } else {
+                System.out.print(i7 + "          ");
+            }
+            System.out.println((char) i7);
+        }
+        for (int i7 = 98; i7 <= 122; i7+=2) {
+            if (i7<99) {
+                System.out.print(i7 + "          ");
+            } else {
+                System.out.print(i7 + "         ");
+            }
+            System.out.println((char) i7);
+        }
 
         // TODO: 06.09.2022 8. Проверка, является ли число палиндромом
         //○ дано число 1234321
