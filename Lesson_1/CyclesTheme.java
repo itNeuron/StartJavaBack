@@ -308,6 +308,28 @@ public class CyclesTheme {
         //○ отобразите в консоли:
         //i. число X является палиндромом
         System.out.println("\nЗадание №8");
+        int num = 1234321;
+        int million, m8, tisha3,t83,s8,tisha2,t82, tisha1,t31,sotni8, desjatki8, edinizi8;
+        int rev8 = 0;
+        while (num>0) {
+            million = num/1000000;
+            m8 = num % 1000000;
+            tisha3 = m8 / 100000;
+            t83 = num % 100000;
+            tisha2 = t83 /10000;
+            t82 = num % 10000;
+            tisha1 = t82 / 1000;
+            t31 = num % 1000;
+            sotni8 = t31 /100;
+            s8 = num % 100;
+            desjatki8 = s8 / 10;
+            edinizi8 = s8 % 10;
+            rev8 = edinizi8 * 1000000 + desjatki8 * 100000 + sotni8 * 10000  + tisha1 * 1000 + tisha2 * 100 + tisha3 * 10 + million;
+            break;
+        }
+        if (num==rev8) {
+            System.out.println("число 1234321 является палиндромом");
+        }
 
         // TODO: 06.09.2022 9. Определение, является ли число счастливым
         //○ счастливым называется число, сумма первых трех цифр которого
