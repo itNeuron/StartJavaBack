@@ -340,6 +340,31 @@ public class CyclesTheme {
         //i. каждую тройку цифр в формате “Сумма цифр abc = sum”
         //ii. является число счастливым или нет 
         System.out.println("\nЗадание №9");
+        int num9 = 4328531;
+        int million9, m9, tisha93,t93,s9,tisha92,t92, tisha91,t91,sotni9, desjatki9, edinizi9;
+        int sum91 = 0;
+        int sum92 = 0;
+        while (num9>0) {
+            million9 = num9/1000000;
+            m9 = num % 1000000;
+            tisha93 = m9 / 100000;
+            t93 = num % 100000;
+            tisha92 = t93 /10000;
+            t91 = num % 1000;
+            sotni9 = t91 /100;
+            s9 = num % 100;
+            desjatki9 = s9 / 10;
+            edinizi9 = s9 % 10;
+            sum91 = million9 + tisha93 + tisha92;
+            sum92 = edinizi9 + desjatki9 + sotni9;
+            System.out.println("Сумма цифр abc = " + sum91);
+            break;
+        }
+        if (sum91 == sum92) {
+            System.out.println(" Число является счастливым");
+        } else {
+            System.out.println(" Число  не является счастливым");
+        }
 
         // TODO: 06.09.2022 10.Вывод таблицы умножения Пифагора
         //○ отобразите таблицу умножения в точности, как в образце, включая
