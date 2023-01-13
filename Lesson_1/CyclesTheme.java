@@ -383,7 +383,6 @@ public class CyclesTheme {
             System.out.println("7 | 14 21 28 35 42 49 56 63");
             System.out.println("8 | 16 24 32 40 48 56 64 72");
             System.out.println("9 | 18 27 36 45 54 63 72 81");
-
         }
 
 
