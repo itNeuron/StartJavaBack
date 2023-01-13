@@ -372,7 +372,7 @@ public class CyclesTheme {
         //○ не добавляйте между строками и столбцами лишние пустоты
         //○ используйте цикл for
         System.out.println("\nЗадание №10");
-        for (int i9 = 0; i9 < 1; i9++) {
+        for (int i10 = 0; i10 < 1; i10++) {
             System.out.println("  |  2  3  4  5  6  7  8  9");
             System.out.println("---------------------------");
             System.out.println("2 |  4  6  8 10 12 14 16 18");
