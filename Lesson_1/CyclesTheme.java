@@ -174,6 +174,15 @@ public class CyclesTheme {
            ********** ###   $$$
            ********** ##    $$
            ********** #     $     */
+        /*Создал два цикла do while, в
+         которых по одному вложенному циклу do while. Я поделил
+          треугольник на две части, на возрастание и убывание.
+           Все работает. Кто-то делал так же?
+
+           Я делал также, но мне сказали сделать иначе. Это можно
+           сделать одним внешним циклом с одним циклом внутри. Всё получилось.
+           оператор if
+           */
         System.out.println("\nЗадание №6");
         int i6;
         for (i6 = 1; i6 < 51; i6++ ) {
@@ -184,95 +193,24 @@ public class CyclesTheme {
         }
         System.out.println("");
 
-        int k6=0;
-        while (k6<5) {
-            if (k6==0) {
-                int z1 = 0;
-                while (z1<5) {
-                    System.out.print("#");
-                    z1++;
-                }
-                System.out.println("");
-            }
-            if (k6==1) {
-                int z2 = 0;
-                while (z2<4) {
-                    System.out.print("#");
-                    z2++;
-                }
-                System.out.println("");
-            }
-            if (k6==2) {
-                int z3 = 0;
-                while (z3<3) {
-                    System.out.print("#");
-                    z3++;
-                }
-                System.out.println("");
-            }
-            if (k6==3) {
-                int z4 = 0;
-                while (z4<2) {
-                    System.out.print("#");
-                    z4++;
-                }
-                System.out.println("");
-            }
-            if (k6==4) {
-                int z5 = 0;
-                while (z5<1) {
-                    System.out.print("#");
-                    z5++;
-                }
-                System.out.println("");
-            }
-            k6++;
+        int k6=5;
+        while (k6 >0 ) {
+            System.out.printf("%1." +  k6 + "s%n","#####");
+            k6--;
         }
         System.out.println("");
-        int e6=0;
+
+        int o6=0;
         do {
-            if (e6==0) {
-                int y1 = 0;
-                while (y1<1) {
-                    System.out.print("$");
-                    y1++;
-                }
-                System.out.println("");
-            }
-            if (e6==1) {
-                int y2 = 0;
-                while (y2<2) {
-                    System.out.print("$");
-                    y2++;
-                }
-                System.out.println("");
-            }
-            if (e6==2) {
-                int y3 = 0;
-                while (y3<3) {
-                    System.out.print("$");
-                    y3++;
-                }
-                System.out.println("");
-            }
-            if (e6==3) {
-                int y4 = 0;
-                while (y4<2) {
-                    System.out.print("$");
-                    y4++;
-                }
-                System.out.println("");
-            }
-            if (e6==4) {
-                int y5 = 0;
-                while (y5<1) {
-                    System.out.print("$");
-                    y5++;
-                }
-                System.out.println("");
-            }
-            e6++;
-        } while (e6<5);
+            System.out.printf("%1." +  o6 + "s%n","$$$");
+            o6++;
+        } while (o6 < 3);
+        int o7=3;
+        do {
+            System.out.printf("%1." +  o7 + "s%n","$$$");
+            o7--;
+        }
+        while (o7 > 0);
 
         // TODO: 06.09.2022 *7. Отображение ASCII-символов
         //○ отобразите, используя for, данные столбцов Dec и Char (и названия
@@ -372,17 +310,23 @@ public class CyclesTheme {
         //○ не добавляйте между строками и столбцами лишние пустоты
         //○ используйте цикл for
         System.out.println("\nЗадание №10");
-        for (int i10 = 0; i10 < 1; i10++) {
-            System.out.println("  |  2  3  4  5  6  7  8  9");
-            System.out.println("---------------------------");
-            System.out.println("2 |  4  6  8 10 12 14 16 18");
-            System.out.println("3 |  6  9 12 15 18 21 24 27");
-            System.out.println("4 |  8 12 12 20 24 28 32 36");
-            System.out.println("5 | 10 15 20 25 30 35 40 45");
-            System.out.println("6 | 12 18 24 30 36 42 48 54");
-            System.out.println("7 | 14 21 28 35 42 49 56 63");
-            System.out.println("8 | 16 24 32 40 48 56 64 72");
-            System.out.println("9 | 18 27 36 45 54 63 72 81");
+        for (int k = 2; k < 10; k++) {
+            if (k < 3) {
+                System.out.print(" " + "|" + " " + k + " ");
+            } else {
+                System.out.print(k + "  ");
+            }
+            if (k == 9) {
+                System.out.println("------------------------");
+            }
+        }
+        for (int i10 = 2; i10 < 10; i10++) {
+            if (i10 < 3) {
+                System.out.print(i10 + "|");
+                System.out.println();
+            } else {
+                System.out.println(i10 + "|");
+            }
         }
 
 
