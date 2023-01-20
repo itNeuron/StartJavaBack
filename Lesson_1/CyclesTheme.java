@@ -304,24 +304,44 @@ public class CyclesTheme {
         //горизонтальные и вертикальные линии
         //○ не добавляйте между строками и столбцами лишние пустоты
         //○ используйте цикл for
-        System.out.println("\nЗадание №10");
+        System.out.println("\n10. Вывод таблицы умножения Пифагора");
+        System.out.println("        ТАБЛИЦА ПИФАГОРА");
+        System.out.printf("%3s |", "");
+        for(int i10 = 2; i10 < 10; i10++) System.out.printf("%3d", i10);
+        System.out.println();
+        for(int i10 = 1; i10 < 11; i10++) System.out.printf("%3s", "___");
+        System.out.println();
+        for(int i10 = 2; i10 < 10; i10++) {
+            System.out.printf("%3d |", i10);
+            for(int j = 2; j < 10; j++) System.out.printf("%3d", i10 * j);
+            System.out.println();
+        }
+        System.out.println("");
+
+        System.out.println("         ТАБЛИЦА ПИФАГОРА");
         for (int k = 2; k < 10; k++) {
             if (k < 3) {
-                System.out.print(" " + "|" + " " + k + " ");
+                System.out.print(" " + "|" + "  " + k + "   ");
             } else {
-                System.out.print(k + "  ");
+                System.out.print(k + "   ");
             }
             if (k == 9) {
-                System.out.println("------------------------");
+                System.out.println("-------------------------------");
             }
         }
         for (int i10 = 2; i10 < 10; i10++) {
             if (i10 < 3) {
                 System.out.print(i10 + "|");
-                System.out.println();
             } else {
-                System.out.println(i10 + "|");
+                System.out.print(i10 + "|");
             }
+            for (int j = 2; j < 10; j++)
+                if ((i10 * j) < 10) {
+                    System.out.print("  " + i10 * j + " ");
+                } else {
+                    System.out.print(" " + i10 * j + " ");
+                }
+            System.out.println();
         }
 
 
