@@ -4,8 +4,8 @@ public class Calculator {
 
     public static void main(String[] args) {
         int a = 3;
-        int b = 3;
-        char operation = '^';
+        int b = 5;
+        char operation = '+';
 
         if (operation == '+') {
             System.out.println(a + b);

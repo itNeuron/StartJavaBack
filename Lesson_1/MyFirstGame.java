@@ -15,7 +15,7 @@ public class MyFirstGame {
                 playerNum++;
             }
         }
-        System.out.println("Число угаданно. Победа!");
+        System.out.println("Число угадано. Победа!");
         System.out.println("Попробуйте ещё раз!");
     }
 }
