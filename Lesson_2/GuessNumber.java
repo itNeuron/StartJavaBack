@@ -1,7 +1,6 @@
 package StartJava.Lesson_2;
 
 public class GuessNumber {
-
     int answer;
 
     public int getAnswer() {

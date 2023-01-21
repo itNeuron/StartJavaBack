@@ -34,7 +34,6 @@ public class GuessNumberTest {
                 number += 1;
 
             } while (gameResult != true);
-
             do {
                 System.out.print("Хотите продолжить игру? [yes/no]:");
                 d = sc.next();
@@ -42,7 +41,6 @@ public class GuessNumberTest {
         }
         System.out.print("Игра окончена. Удачного дня!");
     }
-
     private static boolean chekNum(Player playerOne, Scanner sc, GuessNumber game) {
         System.out.print(playerOne.getName() + ", введите своё число: ");
         int playerNum = sc.nextInt();
