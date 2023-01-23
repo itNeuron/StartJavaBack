@@ -21,5 +21,6 @@ public class WolfTest {
         wolfOne.run();
         wolfOne.howl();
         wolfOne.hunt();
+        System.out.println("Коканый");
     }
 }
