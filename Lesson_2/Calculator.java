@@ -28,7 +28,7 @@ public class Calculator {
     public void calcul() {
         switch (operation) {
             case '+':
-                System.out.println("Ответ: " + a + b);
+                System.out.println("Ответ: " + (a + b));
                 break;
             case '-':
                 System.out.println("Ответ: " + (a - b));
