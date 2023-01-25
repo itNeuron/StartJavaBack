@@ -13,6 +13,7 @@ public class JaegerTest {
         jaegerOne.setSpeed(7);
         jaegerOne.setStrength(8);
         jaegerOne.setArmor(6);
+        System.out.println("uuuiii");
 
         Jaeger сoyoteTango = new Jaeger();
 
