@@ -40,6 +40,7 @@ public class GuessNumberTest {
             } while (!d.equals("yes") && !d.equals("no"));
         }
         System.out.print("Игра окончена. Удачного дня!");
+        sc.close();
     }
     private static boolean chekNum(Player playerOne, Scanner sc, GuessNumber game) {
         System.out.print(playerOne.getName() + ", введите своё число: ");
