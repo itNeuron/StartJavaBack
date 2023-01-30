@@ -14,7 +14,7 @@ public class JaegerTest {
         jaegerOne.setStrength(8);
         jaegerOne.setArmor(6);
 
-        Jaeger сoyoteTango = new Jaeger();
+        Jaeger сoyoteTango = new Jaeger("Coyote Tango", "Mark 1", "Japan", 85.34f, 2.312f, 5, 7, 4);
 
         сoyoteTango.setModelName("Coyote Tango");
         сoyoteTango.setMark("Mark 1");
