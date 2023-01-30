@@ -6,23 +6,24 @@ public class CalculatorTest {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Calculator calculatorOne = new Calculator();
+        System.out.println("Калькулятор запущен!");
+        Calculator calc = new Calculator();
 
         String d = "yes";
         while (d.equals("yes")) {
             System.out.print("Введите первое число: ");
             int setA = scanner.nextInt();
-            calculatorOne.setA(setA);
+            calc.setA(setA);
 
             System.out.print("Введите знак математической операции: ");
             char setOperation = scanner.next().charAt(0);
-            calculatorOne.setOperation(setOperation);
+            calc.setOperation(setOperation);
 
             System.out.print("Введите второе число: ");
             int setB = scanner.nextInt();
-            calculatorOne.setB(setB);
+            calc.setB(setB);
 
-            calculatorOne.calcul();
+            calc.calcul();
 
             do {
                 System.out.println("Хотите продолжить вычисления? [yes/no]:");
@@ -31,6 +32,6 @@ public class CalculatorTest {
         }
 
         System.out.print("Калькулятор закрылся.");
-
+        scanner.close();
     }
 }
