@@ -12,7 +12,7 @@ public class GuessNumberTest {
 
         int answer = rnd.nextInt(101);
         game.setAnswer(answer);
-        System.out.println("Компьютер загадал число " ); //+ game.getAnswer()
+        System.out.println("Компьютер загадал число + game.getAnswer()");
 
         System.out.print("Введите имя первого игрока: ");
         String oneP = sc.nextLine();
