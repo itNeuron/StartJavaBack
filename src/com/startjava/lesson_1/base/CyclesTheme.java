@@ -9,11 +9,11 @@ public class CyclesTheme {
         //○ отобразите эти значения в формате:
         //i. в промежутке [-10, 21] сумма четных чисел = X, а нечетных = Y
 
-         System.out.println("\nЗадание №1");//80 96
+        System.out.println("\nЗадание №1");//80 96
         int a1 = -10;
         int sumX = 0;//80
         int sumY = 0;//96
-        int i=0;
+        int i = 0;
         do {
             if (i % 2 != 0) {
                 if (a1 % 2 != 0) {
@@ -22,7 +22,7 @@ public class CyclesTheme {
                 } else {
                     sumX += a1;
                 }
-            }  else {
+            } else {
                 sumX += a1;
                 a1++;
             }
@@ -38,7 +38,7 @@ public class CyclesTheme {
         int a2 = 5;
         int b2 = -1;
         int c2 = 10;
-        if (a2>b2&a2>c2&b2>c2) {
+        if (a2 > b2 & a2 > c2 & b2 > c2) {
             int max = a2;
             int min = c2;
             System.out.println("max  число" + max);
@@ -46,7 +46,7 @@ public class CyclesTheme {
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
-        } else if (b2>a2&b2>c2&a2>c2) {            
+        } else if (b2 > a2 & b2 > c2 & a2 > c2) {
             int max = b2;
             int min = c2;
             System.out.println("max  число" + max);
@@ -54,7 +54,7 @@ public class CyclesTheme {
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
-        } else if (c2>a2&c2>b2&a2>b2) {
+        } else if (c2 > a2 & c2 > b2 & a2 > b2) {
             int max = c2;
             int min = b2;
             System.out.println("max  число" + max);
@@ -62,7 +62,7 @@ public class CyclesTheme {
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
-        } else if (a2>b2&a2>c2&c2>b2) {
+        } else if (a2 > b2 & a2 > c2 & c2 > b2) {
             int max = a2;
             int min = b2;
             System.out.println("max  число" + max);
@@ -70,7 +70,7 @@ public class CyclesTheme {
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
-        } else if (b2>a2&b2>c2&c2>a2) {
+        } else if (b2 > a2 & b2 > c2 & c2 > a2) {
             int max = b2;
             int min = a2;
             System.out.println("max  число" + max);
@@ -78,7 +78,7 @@ public class CyclesTheme {
             for (i = max; i >= min; i--) {
                 System.out.println(i);
             }
-        } else if (c2>a2&c2>b2&b2>a2) {
+        } else if (c2 > a2 & c2 > b2 & b2 > a2) {
             int max = c2;
             int min = a2;
             System.out.println("max  число" + max);
@@ -87,7 +87,6 @@ public class CyclesTheme {
                 System.out.println(i);
             }
         }
-
 
 
         // TODO: 06.09.2022 3. Вывод реверсивного числа и суммы его цифр
@@ -99,22 +98,22 @@ public class CyclesTheme {
         //ii. сумму его цифр
         System.out.println("\nЗадание №3");
 
-        int tishi, b3, sotni,c9, desjatki, edinizi;
+        int tishi, b3, sotni, c9, desjatki, edinizi;
         int a3 = 1234;
         int rev = 0, sum = 0;
-        while (a3>0) {
-            tishi = a3 /1000;
-            b3 = a3%1000;
-            sotni = b3 /100;
+        while (a3 > 0) {
+            tishi = a3 / 1000;
+            b3 = a3 % 1000;
+            sotni = b3 / 100;
             c9 = b3 % 100;
             desjatki = (c9 / 10);
             edinizi = (c9 % 10);
-            rev = edinizi *1000 + desjatki * 100 + sotni*10  + tishi ;
-            sum = edinizi  + desjatki + sotni  + tishi;
+            rev = edinizi * 1000 + desjatki * 100 + sotni * 10 + tishi;
+            sum = edinizi + desjatki + sotni + tishi;
             break;
         }
         System.out.println("Обратное число " + rev);
-        System.out.println("Сумма " +sum);
+        System.out.println("Сумма " + sum);
 
 
         // TODO: 06.09.2022 4. Вывод чисел на консоль в несколько строк
@@ -130,7 +129,7 @@ public class CyclesTheme {
         //○ число нулей определяйте программно. Не считайте их в уме и не
         // пишите сами
         System.out.println("\nЗадание №4");
-        for (int i4=1;i4<24;i4+=2) {
+        for (int i4 = 1; i4 < 24; i4 += 2) {
             System.out.print(i4 + "  ");
             if (i4 < 9) {
                 System.out.print(" ");
@@ -153,7 +152,7 @@ public class CyclesTheme {
         System.out.println("\nЗадание №5");
         int a5;
         int v5 = 5141591;
-        while (v5>0) {
+        while (v5 > 0) {
             a5 = v5 % 10;
             if (v5 % 2 == 0) {
                 System.out.println("Число " + v5 + "содержит " + a5 + "чётное количество единиц");
@@ -170,40 +169,40 @@ public class CyclesTheme {
         //iii. для второго треугольника только do-while
         //○ каждую фигуру выводите на новой строке
         /* ********** ##### $
-           ********** ####  $$
-           ********** ###   $$$
-           ********** ##    $$
-           ********** #     $     */
+         ********** ####  $$
+         ********** ###   $$$
+         ********** ##    $$
+         ********** #     $     */
 
         System.out.println("\nЗадание №6");
         int i6;
-        for (i6 = 1; i6 < 51; i6++ ) {
+        for (i6 = 1; i6 < 51; i6++) {
             System.out.print("*");
-            if (i6%10==0) {
+            if (i6 % 10 == 0) {
                 System.out.println("");
             }
         }
         System.out.println("");
 
-        int k6=5;
-        while (k6 >0 ) {
-            System.out.printf("%1." +  k6 + "s%n","#####");
+        int k6 = 5;
+        while (k6 > 0) {
+            System.out.printf("%1." + k6 + "s%n", "#####");
             k6--;
         }
         System.out.println("");
 
-        int o6=1;
+        int o6 = 1;
         do {
             if (o6 < 5) {
-                System.out.printf("%1." +  o6 + "s%n","$$$");
+                System.out.printf("%1." + o6 + "s%n", "$$$");
                 o6++;
             }
             if (o6 > 3) {
                 int o7 = 2;
                 do {
-                    System.out.printf("%1." +  o7 + "s%n","$$");
+                    System.out.printf("%1." + o7 + "s%n", "$$");
                     o7--;
-                } while (o7 >0);
+                } while (o7 > 0);
             }
         } while (o6 < 4);
 
@@ -216,16 +215,16 @@ public class CyclesTheme {
         //○ данные каждого столбца должны быть выровнены по правому краю
         System.out.println("\nЗадание №7");
         System.out.println("Dec        Char");
-        for (int i7 = 1; i7 <= 47; i7+=2) {
-            if (i7<10) {
+        for (int i7 = 1; i7 <= 47; i7 += 2) {
+            if (i7 < 10) {
                 System.out.print("  " + i7 + "          ");
             } else {
                 System.out.print(" " + i7 + "          ");
             }
             System.out.println((char) i7);
         }
-        for (int i7 = 98; i7 <= 122; i7+=2) {
-            if (i7<99) {
+        for (int i7 = 98; i7 <= 122; i7 += 2) {
+            if (i7 < 99) {
                 System.out.print(" " + i7 + "          ");
             } else {
                 System.out.print(i7 + "          ");
@@ -242,25 +241,25 @@ public class CyclesTheme {
         //i. число X является палиндромом
         System.out.println("\nЗадание №8");
         int num = 1234321;
-        int million, m8, tisha3,t83,s8,tisha2,t82, tisha1,t31,sotni8, desjatki8, edinizi8;
+        int million, m8, tisha3, t83, s8, tisha2, t82, tisha1, t31, sotni8, desjatki8, edinizi8;
         int rev8 = 0;
-        while (num>0) {
-            million = num/1000000;
+        while (num > 0) {
+            million = num / 1000000;
             m8 = num % 1000000;
             tisha3 = m8 / 100000;
             t83 = num % 100000;
-            tisha2 = t83 /10000;
+            tisha2 = t83 / 10000;
             t82 = num % 10000;
             tisha1 = t82 / 1000;
             t31 = num % 1000;
-            sotni8 = t31 /100;
+            sotni8 = t31 / 100;
             s8 = num % 100;
             desjatki8 = s8 / 10;
             edinizi8 = s8 % 10;
-            rev8 = edinizi8 * 1000000 + desjatki8 * 100000 + sotni8 * 10000  + tisha1 * 1000 + tisha2 * 100 + tisha3 * 10 + million;
+            rev8 = edinizi8 * 1000000 + desjatki8 * 100000 + sotni8 * 10000 + tisha1 * 1000 + tisha2 * 100 + tisha3 * 10 + million;
             break;
         }
-        if (num==rev8) {
+        if (num == rev8) {
             System.out.println("число 1234321 является палиндромом");
         }
 
@@ -274,17 +273,17 @@ public class CyclesTheme {
         //ii. является число счастливым или нет 
         System.out.println("\nЗадание №9");
         int num9 = 4328531;
-        int million9, m9, tisha93,t93,s9,tisha92,t92, tisha91,t91,sotni9, desjatki9, edinizi9;
+        int million9, m9, tisha93, t93, s9, tisha92, t92, tisha91, t91, sotni9, desjatki9, edinizi9;
         int sum91 = 0;
         int sum92 = 0;
-        while (num9>0) {
-            million9 = num9/1000000;
+        while (num9 > 0) {
+            million9 = num9 / 1000000;
             m9 = num % 1000000;
             tisha93 = m9 / 100000;
             t93 = num % 100000;
-            tisha92 = t93 /10000;
+            tisha92 = t93 / 10000;
             t91 = num % 1000;
-            sotni9 = t91 /100;
+            sotni9 = t91 / 100;
             s9 = num % 100;
             desjatki9 = s9 / 10;
             edinizi9 = s9 % 10;
@@ -307,13 +306,13 @@ public class CyclesTheme {
         System.out.println("\n10. Вывод таблицы умножения Пифагора");
         System.out.println("        ТАБЛИЦА ПИФАГОРА");
         System.out.printf("%3s |", "");
-        for(int i10 = 2; i10 < 10; i10++) System.out.printf("%3d", i10);
+        for (int i10 = 2; i10 < 10; i10++) System.out.printf("%3d", i10);
         System.out.println();
-        for(int i10 = 1; i10 < 11; i10++) System.out.printf("%3s", "___");
+        for (int i10 = 1; i10 < 11; i10++) System.out.printf("%3s", "___");
         System.out.println();
-        for(int i10 = 2; i10 < 10; i10++) {
+        for (int i10 = 2; i10 < 10; i10++) {
             System.out.printf("%3d |", i10);
-            for(int j = 2; j < 10; j++) System.out.printf("%3d", i10 * j);
+            for (int j = 2; j < 10; j++) System.out.printf("%3d", i10 * j);
             System.out.println();
         }
         System.out.println("");
@@ -343,15 +342,5 @@ public class CyclesTheme {
                 }
             System.out.println();
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
