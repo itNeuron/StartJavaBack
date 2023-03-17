@@ -33,7 +33,7 @@ public class GuessNumberTest {
                 }
                 number += 1;
 
-            } while (gameResult != true);
+            } while (!gameResult);
             do {
                 System.out.print("Хотите продолжить игру? [yes/no]:");
                 d = sc.next();
