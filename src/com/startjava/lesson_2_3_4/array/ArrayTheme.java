@@ -20,20 +20,47 @@ public class ArrayTheme {
                 break;
             }
         }
-
+        System.out.println();
         System.out.println();
 
         // TODO: 17.03.2023 2.	Вывод произведения элементов массива
         //a.	заполните массив в цикле цифрами в промежутке [0, 9] по возрастанию
         //b.	подсчитайте их произведение (без учета 0 и 9). Числа берите из массива
         //c.	отобразите:
-        //i.	в цикле произведение в формате 1 * 2 *… * 8 = R
+        //i.	в цикле произведение в формате 1 * 2 *… * 8 = R  //40320
         //ii.	0 и 9 (берите из массива) отдельной строкой, указав их индексы
         //d.	для вывода произведения используйте тернарный оператор вместо if
-        int[] arrNum = new int[];
-        for (int i = 0; i < arrNum.length; i++) {
+        System.out.println("2.Вывод произведения элементов массива");
+
+        int[] arrNum = new int[10];
+        for (int i = 0; i < arrNum.length; i++) {  // создаёт цикл
+            arrNum[i] = i;
+            System.out.print(arrNum[i] + " ");
+        }
+        System.out.println();
+        System.out.println("корректировка цикла");
+        for (int i = 1; i < arrNum.length-1; i++) {
+            System.out.print(arrNum[i] + " ");
+        }
+        System.out.println();
+        int sum=0;
+        int i=1;
+        while (i < arrNum.length-1 ) {
+            int k = arrNum[i] * (i+1);
+
+
 
         }
+
+
+       /* int k=0;
+        int sum=0;
+        for (int i = 1; i < arrNum.length-1; i++) {
+            k = arrNum[i] * (i+1);
+            System.out.print(k + " ");
+        }
+        System.out.print(k + " ");*/
+
 
 
 
