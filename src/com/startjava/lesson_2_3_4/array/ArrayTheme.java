@@ -38,19 +38,32 @@ public class ArrayTheme {
             System.out.print(arrNum[i] + " ");
         }
         System.out.println();
+        int sumArr = 1;
+        int k = 1;
         System.out.println("корректировка цикла");
         for (int i = 1; i < arrNum.length-1; i++) {
             System.out.print(arrNum[i] + " ");
+            int d = arrNum[k];
+            if ()
+            sumArr = sumArr * d;
+            k++;
+
+
         }
         System.out.println();
-        int sum=0;
-        int i=1;
-        while (i < arrNum.length-1 ) {
-            int k = arrNum[i] * (i+1);
+        System.out.print("1 * 2 *… * 8 = " + sumArr);
 
 
 
-        }
+
+       /* do {
+            int d = arrNum[k];
+
+
+            sumArr = sumArr * d;
+            k++;
+        } while (k < arrNum.length-1);
+        System.out.print("1 * 2 *… * 8 = " + sumArr);*/
 
 
        /* int k=0;
