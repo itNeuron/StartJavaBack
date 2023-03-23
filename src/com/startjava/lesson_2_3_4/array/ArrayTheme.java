@@ -39,14 +39,21 @@ public class ArrayTheme {
         }
         System.out.println();
         int sumArr = 1;
-        int k = 1;
+        int k = 0;
         System.out.println("корректировка цикла");
         for (int i = 1; i < arrNum.length-1; i++) {
             System.out.print(arrNum[i] + " ");
+
             int d = arrNum[k];
-            if ()
-            sumArr = sumArr * d;
-            k++;
+            if (k == 0 || k == 9) {
+                System.out.println();
+                System.out.print(arrNum[0] + " " + arrNum[9] );
+                k++;
+            } else {
+                sumArr = sumArr * d;
+                k++;
+            }
+
 
 
         }
