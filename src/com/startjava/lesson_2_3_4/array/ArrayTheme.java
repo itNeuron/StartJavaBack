@@ -38,140 +38,32 @@ public class ArrayTheme {
             System.out.print(arrNum[i] + " ");
         }
         System.out.println();
-        int sumArr = 1;
-        int k = 0;
         System.out.println("корректировка цикла");
+        int sumArr = 1;
         for (int i = 1; i < arrNum.length-1; i++) {
-            int d = arrNum[k];
-            System.out.print(arrNum[i] + " ");
-            sumArr = sumArr * d;
+            int d = arrNum[i];
 
+            sumArr = sumArr * d;
+            if (i == 1 || i == 9) {
+                System.out.print(arrNum[0] + " " + arrNum[9] );
+                System.out.println();
+            }
+            System.out.print(arrNum[i] + " ");
         }
         System.out.println();
         System.out.print("1 * 2 *… * 8 = " + sumArr);
-        if (k == 0 || k == 9) {
-            System.out.println();
-            System.out.print(arrNum[0] + " " + arrNum[9] );
-        }
-        k++;
 
+        // TODO: 25.03.2023 3.	Удаление элементов массива
+        //a.	заполните массив размерностью 15 случайными вещественными числами в полуинтервале [0, 1)
+        //b.	вычислите индекс средней ячейки массива, а затем возьмите из нее число
+        //c.	перезапишите в массиве нулями все числа, которые больше этого значения
+        //d.	отобразите:
+        //    i.	исходный и измененный массив по 8 и 7 чисел в строке
+        //    ii.	при этом после запятой отображайте только три знака
+        //    iii.	выделяйте под каждое число с помощью форматирования одинаковое количество позиций,
+        //    чтобы числа были выровнены в каждом столбце по правому краю
+        //    iv.	количество обнуленных ячеек
 
-
-
-
-
-
-       /* do {
-            int d = arrNum[k];
-
-
-            sumArr = sumArr * d;
-            k++;
-        } while (k < arrNum.length-1);
-        System.out.print("1 * 2 *… * 8 = " + sumArr);*/
-
-
-       /* int k=0;
-        int sum=0;
-        for (int i = 1; i < arrNum.length-1; i++) {
-            k = arrNum[i] * (i+1);
-            System.out.print(k + " ");
-        }
-        System.out.print(k + " ");*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //  for (int i = 0; i < numbers1.length / 2; i++) {
-        //      int temp = numbers1[i];
-        //      numbers1[i] = numbers1[numbers1.length - i - 1];
-        //      numbers1[numbers1.length - i - 1] = temp;
-        //  }
-
-      /*  String str2 = "abcdabcd";
-        boolean quadric = quadric(str2);
-        System.out.println(quadric);
-    }
-
-    public static boolean quadric(String str2) {
-        if (str2.length() % 2 != 0) {
-            return false;
-        }
-        int middle = str2.length() / 2;
-        for (int i = 0; i < middle; i++) {
-            char a = str2.charAt(i);
-            char b = str2.charAt(middle+i);
-            System.out.println(i + " " + a + " " + b);
-            if (a != b) {
-                return false;
-            }
-        }
-        return true;
-
-     /*
-     1.
-
-
-робеерт касымов
-
-
-
-     int a = numbers1.length;
-       int i = 0;
-       do {
-
-
-           System.out.print(numbers1[a] -1 + " ");
-         a--;
-       } while (a > 0);
-        int o = 10;
-        for (int k = 0; k < numbers1.length; k++) {
-            if ( o < numbers1.length) {
-                System.out.print(numbers1[o] + " ");
-            } else {break;}
-
-        }
-        String[] a = { "Каждый "," охотник "," желает "," знать "," где "," сидит "," фазан "};
-		//Выводим изначальный массив в консоль
-		for (int i=0; i<a.length; i++){
-			System.out.print(a[i]);
-		}
-		System.out.println();
-
-		int n = a.length;
-		//Переменная, которая будет использоваться при обмене элементов
-		String temp;
-
-		for (int i = 0; i < n/2; i++) {
-		    temp = a[n-i-1];
-		    a[n-i-1] = a[i];
-		    a[i] = temp;
-		}
-		//Выводим конечный массив в консоль
-		for (int i=0; i<a.length; i++){
-			System.out.print(a[i]);
-		}
-	}
-}*/
 
 
     }
