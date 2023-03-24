@@ -42,23 +42,21 @@ public class ArrayTheme {
         int k = 0;
         System.out.println("корректировка цикла");
         for (int i = 1; i < arrNum.length-1; i++) {
-            System.out.print(arrNum[i] + " ");
-
             int d = arrNum[k];
-            if (k == 0 || k == 9) {
-                System.out.println();
-                System.out.print(arrNum[0] + " " + arrNum[9] );
-                k++;
-            } else {
-                sumArr = sumArr * d;
-                k++;
-            }
-
-
+            System.out.print(arrNum[i] + " ");
+            sumArr = sumArr * d;
 
         }
         System.out.println();
         System.out.print("1 * 2 *… * 8 = " + sumArr);
+        if (k == 0 || k == 9) {
+            System.out.println();
+            System.out.print(arrNum[0] + " " + arrNum[9] );
+        }
+        k++;
+
+
+
 
 
 
