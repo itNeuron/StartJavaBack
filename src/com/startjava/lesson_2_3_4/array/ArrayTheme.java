@@ -1,7 +1,22 @@
 package com.startjava.lesson_2_3_4.array;
 
+import java.util.Random;
+
 public class ArrayTheme {
     public static void main(String[] args) {
+        /*
+        Код, записанный в традиционном стиле:
+         int[] nums = new int[10];
+         for (int i = 0; i < nums.length; i++) {
+             System.out.print(nums[i]);
+         }
+
+         Тот же самый код, но с использованием for-each:
+         int[] nums = new int[10];
+         for (int num : nums) {
+             System.out.print(num);
+         }
+         */
         // TODO: 11.03.2023 1.	Реверс значений массива
         // a.	заполните массив числами вразнобой в промежутке [1, 7], используя сокращенную форму инициализации
         // b.	переставьте значения в исходном массиве в обратном порядке
@@ -42,7 +57,6 @@ public class ArrayTheme {
         int sumArr = 1;
         for (int i = 1; i < arrNum.length-1; i++) {
             int d = arrNum[i];
-
             sumArr = sumArr * d;
             if (i == 1 || i == 9) {
                 System.out.print(arrNum[0] + " " + arrNum[9] );
@@ -52,6 +66,7 @@ public class ArrayTheme {
         }
         System.out.println();
         System.out.print("1 * 2 *… * 8 = " + sumArr);
+        System.out.println();
 
         // TODO: 25.03.2023 3.	Удаление элементов массива
         //a.	заполните массив размерностью 15 случайными вещественными числами в полуинтервале [0, 1)
@@ -63,6 +78,15 @@ public class ArrayTheme {
         //    iii.	выделяйте под каждое число с помощью форматирования одинаковое количество позиций,
         //    чтобы числа были выровнены в каждом столбце по правому краю
         //    iv.	количество обнуленных ячеек
+        System.out.println("3.Удаление элементов массива");
+
+
+        double a = Math.random();
+        System.out.println (a);
+        float [] arrayDel = new float[15];
+
+
+
 
 
 
