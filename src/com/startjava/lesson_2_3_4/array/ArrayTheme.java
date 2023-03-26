@@ -58,7 +58,7 @@ public class ArrayTheme {
         for (int i = 1; i < arrNum.length-1; i++) {
             int d = arrNum[i];
             sumArr = sumArr * d;
-            if (i == 1 || i == 9) {
+            if (i == 1) {
                 System.out.print(arrNum[0] + " " + arrNum[9] );
                 System.out.println();
             }
@@ -67,23 +67,79 @@ public class ArrayTheme {
         System.out.println();
         System.out.print("1 * 2 *… * 8 = " + sumArr);
         System.out.println();
+        System.out.println();
 
         // TODO: 25.03.2023 3.	Удаление элементов массива
-        //a.	заполните массив размерностью 15 случайными вещественными числами в полуинтервале [0, 1)
-        //b.	вычислите индекс средней ячейки массива, а затем возьмите из нее число
+        //a.	+заполните массив размерностью 15 случайными вещественными числами в полуинтервале [0, 1)
+        //b.	+вычислите индекс средней ячейки массива, а затем возьмите из нее число
         //c.	перезапишите в массиве нулями все числа, которые больше этого значения
         //d.	отобразите:
         //    i.	исходный и измененный массив по 8 и 7 чисел в строке
         //    ii.	при этом после запятой отображайте только три знака
         //    iii.	выделяйте под каждое число с помощью форматирования одинаковое количество позиций,
-        //    чтобы числа были выровнены в каждом столбце по правому краю
+        //           чтобы числа были выровнены в каждом столбце по правому краю
         //    iv.	количество обнуленных ячеек
+
         System.out.println("3.Удаление элементов массива");
 
 
-        double a = Math.random();
-        System.out.println (a);
         float [] arrayDel = new float[15];
+        for (int q = 0; q < arrayDel.length; q++) {  // создаёт цикл
+            float a = (float) Math.random();
+            arrayDel[q] = a;
+            if (q==8) {
+                System.out.println();
+            }
+            System.out.printf("%.3f",arrayDel[q]);
+            System.out.print(" ");
+            if (q==14) {
+                System.out.println();
+                int w = arrayDel.length / 2 ;
+                System.out.printf("%.3f",arrayDel[w]);
+
+                for (int i = 0; i < arrayDel.length-1; i++) {
+                    if (w < arrayDel[i]) {
+
+                        //arrayDel[i]=arrayDel[0];
+
+                    System.out.printf("%.3f",arrayDel[i]);
+                    System.out.print(" ");
+                    } else {
+                        //привратить числа больше w в 0
+                        for (int n = 0; n < arrNum.length; n++) {  // создаёт цикл
+                            arrNum[n] = n;
+                            System.out.print(arrNum[n] + " ");
+                        }
+                        arrayDel[q]=0;
+                    }
+                }
+
+            }
+
+
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        int w = arrayDel.length / 2 ;
+        System.out.printf("%.3f",arrayDel[w]);
+        System.out.println();
+
+        int Length = 15;//длинна
+        int[] numbers = new int[Length];
+        System.out.print("Заполните массив целыми числами через пробел: ");
+        for (int i = 0; i < Length; i++) {
+            numbers[i] = i;
+        }
+        int max = w;
+        for (int i = 0; i < Length-1; i++) {
+            if (max < numbers[i+1]) {
+                max = numbers[i+1];
+            }
+        }
+        System.out.println("Максимальное число: " + max);
+
 
 
 
