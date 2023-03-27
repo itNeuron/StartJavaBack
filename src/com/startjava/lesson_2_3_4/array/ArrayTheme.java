@@ -1,7 +1,5 @@
 package com.startjava.lesson_2_3_4.array;
 
-import java.util.Arrays;
-import java.util.Random;
 
 public class ArrayTheme {
     public static void main(String[] args) {
@@ -73,7 +71,7 @@ public class ArrayTheme {
         // TODO: 25.03.2023 3.	Удаление элементов массива
         //a.	+заполните массив размерностью 15 случайными вещественными числами в полуинтервале [0, 1)
         //b.	+вычислите индекс средней ячейки массива, а затем возьмите из нее число
-        //c.	перезапишите в массиве нулями все числа, которые больше этого значения
+        //c.	+перезапишите в массиве нулями все числа, которые больше этого значения
         //d.	отобразите:
         //    i.	исходный и измененный массив по 8 и 7 чисел в строке
         //    ii.	при этом после запятой отображайте только три знака
@@ -83,13 +81,13 @@ public class ArrayTheme {
 
         System.out.println("3.Удаление элементов массива");
 
-
         float[] arrayDel = new float[15];
-        for (int q = 0; q < arrayDel.length; q++) {  // создаёт цикл
+        for (int q = 0; q < arrayDel.length; q++) {
             float a = (float) Math.random();
             arrayDel[q] = a;
             if (q == 8) {
                 System.out.println();
+                System.out.print("      ");
             }
             System.out.printf("%.3f", arrayDel[q]);
             System.out.print(" ");
@@ -98,42 +96,26 @@ public class ArrayTheme {
                 System.out.println();
                 System.out.printf("%.3f", arrayDel[w]);
                 System.out.println();
-
-                if (arrayDel[w] > arrayDel[q]) {
-                    for (int t = 0; t < arrayDel.length; t++) {
-                        System.out.printf("%.3f", arrayDel[q]);;
-                    }
-                }
-
-            }
-
-        }
-       /* for(i = 0, j = 0; i < x; i++)
-        {
-            if(a[i]<0)
-                a[i]=0;
-            else if(a[i] > 0)
-            {
-                b[j] = a[i];
-                j++;
             }
         }
-        /*
+        int w = arrayDel.length / 2;
+        int sumArrDell = 0;
+        for (int q = 0; q < arrayDel.length; q++) {
+            if (arrayDel[w] >= arrayDel[q]) {
+                System.out.printf("%.3f", arrayDel[q]);
+                System.out.print(" ");
+            } else if (arrayDel[w] < arrayDel[q]) {
+                arrayDel[q] = 0;
+                System.out.printf("%.3f", arrayDel[q]);
+                System.out.print(" ");
+                sumArrDell ++;
+            }
+            if (q == 7) {
+                System.out.println();
+                System.out.print("      ");
+            }
+        }
         System.out.println();
-        int w = arrayDel.length / 2;                  //8ой, с которым нужно сравнивать остальные
-        System.out.printf("%.3f", arrayDel[w]);
-        System.out.println();
-
-        //сверху всё ок
-        System.out.println(Arrays.toString(arrayDel));
-        for (int i = 0; i < arrayDel.length; i++) {
-            if (w < arrayDel[i]) {                    // не получается заменить элементы
-                                                       // массива, которые больше w
-                arrayDel[i] = 0;
-                System.out.print(arrayDel[i]);
-            }
-
-        }
-        //System.out.println(Arrays.toString(arrayDel));*/
+        System.out.println("Количество обнулённых ячеек: " + sumArrDell + " из 15");
     }
 }
