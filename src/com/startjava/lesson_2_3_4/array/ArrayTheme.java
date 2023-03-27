@@ -1,5 +1,6 @@
 package com.startjava.lesson_2_3_4.array;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class ArrayTheme {
@@ -30,8 +31,8 @@ public class ArrayTheme {
         }
         System.out.println();
         for (int i = 0; i <= numbers1.length - 1; i++) {
-            System.out.print(numbers1[numbers1.length-1 - i] + " ");
-            if (i==6) {
+            System.out.print(numbers1[numbers1.length - 1 - i] + " ");
+            if (i == 6) {
                 break;
             }
         }
@@ -55,11 +56,11 @@ public class ArrayTheme {
         System.out.println();
         System.out.println("корректировка цикла");
         int sumArr = 1;
-        for (int i = 1; i < arrNum.length-1; i++) {
+        for (int i = 1; i < arrNum.length - 1; i++) {
             int d = arrNum[i];
             sumArr = sumArr * d;
             if (i == 1) {
-                System.out.print(arrNum[0] + " " + arrNum[9] );
+                System.out.print(arrNum[0] + " " + arrNum[9]);
                 System.out.println();
             }
             System.out.print(arrNum[i] + " ");
@@ -83,68 +84,56 @@ public class ArrayTheme {
         System.out.println("3.Удаление элементов массива");
 
 
-        float [] arrayDel = new float[15];
+        float[] arrayDel = new float[15];
         for (int q = 0; q < arrayDel.length; q++) {  // создаёт цикл
             float a = (float) Math.random();
             arrayDel[q] = a;
-            if (q==8) {
+            if (q == 8) {
                 System.out.println();
             }
-            System.out.printf("%.3f",arrayDel[q]);
+            System.out.printf("%.3f", arrayDel[q]);
             System.out.print(" ");
-            if (q==14) {
+            if (q == 14) {
+                int w = arrayDel.length / 2;
                 System.out.println();
-                int w = arrayDel.length / 2 ;
-                System.out.printf("%.3f",arrayDel[w]);
+                System.out.printf("%.3f", arrayDel[w]);
+                System.out.println();
 
-                for (int i = 0; i < arrayDel.length-1; i++) {
-                    if (w < arrayDel[i]) {
-
-                        //arrayDel[i]=arrayDel[0];
-
-                    System.out.printf("%.3f",arrayDel[i]);
-                    System.out.print(" ");
-                    } else {
-                        //привратить числа больше w в 0
-                        for (int n = 0; n < arrNum.length; n++) {  // создаёт цикл
-                            arrNum[n] = n;
-                            System.out.print(arrNum[n] + " ");
-                        }
-                        arrayDel[q]=0;
+                if (arrayDel[w] > arrayDel[q]) {
+                    for (int t = 0; t < arrayDel.length; t++) {
+                        System.out.printf("%.3f", arrayDel[q]);;
                     }
                 }
 
             }
 
-
         }
-        System.out.println();
-        System.out.println();
-        System.out.println();
-
-        int w = arrayDel.length / 2 ;
-        System.out.printf("%.3f",arrayDel[w]);
-        System.out.println();
-
-        int Length = 15;//длинна
-        int[] numbers = new int[Length];
-        System.out.print("Заполните массив целыми числами через пробел: ");
-        for (int i = 0; i < Length; i++) {
-            numbers[i] = i;
-        }
-        int max = w;
-        for (int i = 0; i < Length-1; i++) {
-            if (max < numbers[i+1]) {
-                max = numbers[i+1];
+       /* for(i = 0, j = 0; i < x; i++)
+        {
+            if(a[i]<0)
+                a[i]=0;
+            else if(a[i] > 0)
+            {
+                b[j] = a[i];
+                j++;
             }
         }
-        System.out.println("Максимальное число: " + max);
+        /*
+        System.out.println();
+        int w = arrayDel.length / 2;                  //8ой, с которым нужно сравнивать остальные
+        System.out.printf("%.3f", arrayDel[w]);
+        System.out.println();
 
+        //сверху всё ок
+        System.out.println(Arrays.toString(arrayDel));
+        for (int i = 0; i < arrayDel.length; i++) {
+            if (w < arrayDel[i]) {                    // не получается заменить элементы
+                                                       // массива, которые больше w
+                arrayDel[i] = 0;
+                System.out.print(arrayDel[i]);
+            }
 
-
-
-
-
-
+        }
+        //System.out.println(Arrays.toString(arrayDel));*/
     }
 }
