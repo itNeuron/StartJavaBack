@@ -47,7 +47,7 @@ public class ArrayTheme {
         System.out.println("2.Вывод произведения элементов массива");
 
         int[] arrNum = new int[10];
-        for (int i = 0; i < arrNum.length; i++) {  // создаёт цикл
+        for (int i = 0; i < arrNum.length; i++) {  // создаёт массив
             arrNum[i] = i;
             System.out.print(arrNum[i] + " ");
         }
@@ -117,5 +117,95 @@ public class ArrayTheme {
         }
         System.out.println();
         System.out.println("Количество обнулённых ячеек: " + sumArrDell + " из 15");
+        System.out.println();
+
+        // TODO: 28.03.2023 4.	Вывод элементов массива лесенкой в обратном порядке
+        //a.	создайте массив, заполнив его в цикле большими анг. буквами по возрастанию
+        //b.	отобразите его содержимое лесенкой в обратном порядке в следующем формате:
+        // Z
+        //ZY   [90;60]
+        //ZYX
+        //ZYXW
+
+        System.out.println("4.Вывод элементов массива лесенкой в обратном порядке");
+        System.out.println();
+
+        int sumA = 0;
+
+
+        for (int r = 90; r >= 65; r--) {
+
+            char[] arrChar = new char[r+1];
+            arrChar[r] = (char) r;
+            for (int i = 0; i < arrChar.length-1; i++ ) {
+                sumA = r - i;
+                System.out.print((char) arrChar[sumA] + " " );
+
+                // System.out.printf("%1." + sumA + "s%n", arrChar[sumA]);
+            }
+            System.out.println();
+        }
+
+
+      /*
+      sp x spln
+      sp x sp x-1 spln
+      sp x sp x-1 sp x-1-1 spln
+
+
+        int k6 = 5;
+        while (k6 > 0) {
+            System.out.printf("%1." + k6 + "s%n", "#####");
+            k6--;
+        }
+
+
+
+*/
+
+
+
+        /*
+        for (int g = 0; g < arrNum.length-1; g++) {
+            for (int i = 90; i >= 65; i--) {
+                System.out.print((char)i + " ");
+                arrChar[g] = (char) i;
+            }
+            System.out.println(arrChar[g]);
+        }
+
+
+       /*
+        for (int i = 90; i>=65; i-- ) {
+            arrChar[i] = i;
+            System.out.print((char)arrChar[i] + " ");
+        }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
