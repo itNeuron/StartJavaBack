@@ -140,7 +140,6 @@ public class IfElseStatementTheme {
         //iii. итоговую сумму с %
         System.out.println("\nЗадание №6");
         int a6 = 300000;
-        int a66 = (int) (a6*0.05);
         if (a6 < 100000) {
             System.out.println("Сумма вклада - " + a6);
             System.out.println("Начисленный процент - " + (int) (a6*0.05));

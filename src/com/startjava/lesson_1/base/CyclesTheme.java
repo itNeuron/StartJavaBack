@@ -151,7 +151,7 @@ public class CyclesTheme {
         //i. число X содержит N (четное/нечетное) количество единиц
         System.out.println("\nЗадание №5");
         int a5;
-        int v5 = 5141591;
+        int v5 = 3141591;
         while (v5 > 0) {
             a5 = v5 % 10;
             if (v5 % 2 == 0) {
@@ -272,12 +272,12 @@ public class CyclesTheme {
         //i. каждую тройку цифр в формате “Сумма цифр abc = sum”
         //ii. является число счастливым или нет 
         System.out.println("\nЗадание №9");
-        int num9 = 4328531;
-        int million9, m9, tisha93, t93, s9, tisha92, t92, tisha91, t91, sotni9, desjatki9, edinizi9;
+        int num9 = 123123;
+        int million9, m9, tisha93, t93, s9, tisha92, t91, sotni9, desjatki9, edinizi9;
         int sum91 = 0;
         int sum92 = 0;
         while (num9 > 0) {
-            million9 = num9 / 1000000;
+            million9 = num9 / 100000;
             m9 = num % 1000000;
             tisha93 = m9 / 100000;
             t93 = num % 100000;
@@ -290,12 +290,13 @@ public class CyclesTheme {
             sum91 = million9 + tisha93 + tisha92;
             sum92 = edinizi9 + desjatki9 + sotni9;
             System.out.println("Сумма цифр abc = " + sum91);
+            System.out.println("Сумма цифр def = " + sum92);
+            if (sum91 != sum92) {
+                System.out.println(" Число  не является счастливым");
+            } else {
+                System.out.println(" Число является счастливым");
+            }
             break;
-        }
-        if (sum91 == sum92) {
-            System.out.println(" Число является счастливым");
-        } else {
-            System.out.println(" Число  не является счастливым");
         }
 
         // TODO: 06.09.2022 10.Вывод таблицы умножения Пифагора
@@ -306,13 +307,16 @@ public class CyclesTheme {
         System.out.println("\n10. Вывод таблицы умножения Пифагора");
         System.out.println("        ТАБЛИЦА ПИФАГОРА");
         System.out.printf("%3s |", "");
-        for (int i10 = 2; i10 < 10; i10++) System.out.printf("%3d", i10);
+        for (int i10 = 2; i10 < 10; i10++)
+            System.out.printf("%3d", i10);
         System.out.println();
-        for (int i10 = 1; i10 < 11; i10++) System.out.printf("%3s", "___");
+        for (int i10 = 1; i10 < 11; i10++)
+            System.out.printf("%3s", "___");
         System.out.println();
         for (int i10 = 2; i10 < 10; i10++) {
             System.out.printf("%3d |", i10);
-            for (int j = 2; j < 10; j++) System.out.printf("%3d", i10 * j);
+            for (int j = 2; j < 10; j++)
+                System.out.printf("%3d", i10 * j);
             System.out.println();
         }
         System.out.println("");
@@ -329,11 +333,7 @@ public class CyclesTheme {
             }
         }
         for (int i10 = 2; i10 < 10; i10++) {
-            if (i10 < 3) {
                 System.out.print(i10 + "|");
-            } else {
-                System.out.print(i10 + "|");
-            }
             for (int j = 2; j < 10; j++)
                 if ((i10 * j) < 10) {
                     System.out.print("  " + i10 * j + " ");

@@ -5,7 +5,7 @@ public class Calculator {
     public static void main(String[] args) {
         int a = 3;
         int b = 5;
-        char operation = '+';
+        char operation = '^';
 
         if (operation == '+') {
             System.out.println(a + b);

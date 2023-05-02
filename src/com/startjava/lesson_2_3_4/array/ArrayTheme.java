@@ -129,22 +129,28 @@ public class ArrayTheme {
 
         System.out.println("4.Вывод элементов массива лесенкой в обратном порядке");
         System.out.println();
+        char[] arrChar = new char[0];
+         for (int i = 0; i < arrChar.length-1; i++) {
 
+         }
+
+
+/*
         int sumA = 0;
-
-
         for (int r = 90; r >= 65; r--) {
-
             char[] arrChar = new char[r+1];
             arrChar[r] = (char) r;
             for (int i = 0; i < arrChar.length-1; i++ ) {
                 sumA = r - i;
                 System.out.print((char) arrChar[sumA] + " " );
-
                 // System.out.printf("%1." + sumA + "s%n", arrChar[sumA]);
             }
             System.out.println();
-        }
+            1 инициализируем массив числами 90-65
+            2 печатаем 1  строка 1 и 2чл и так до конца массива
+
+        }*/
+
 
 
       /*
