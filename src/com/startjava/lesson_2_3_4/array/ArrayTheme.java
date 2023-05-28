@@ -3,7 +3,7 @@ package com.startjava.lesson_2_3_4.array;
 
 public class ArrayTheme {
     public static void main(String[] args) {
-        /*
+    /*
         Код, записанный в традиционном стиле:
          int[] nums = new int[10];
          for (int i = 0; i < nums.length; i++) {
@@ -15,7 +15,7 @@ public class ArrayTheme {
          for (int num : nums) {
              System.out.print(num);
          }
-         */
+    */
         // TODO: 11.03.2023 1.	Реверс значений массива
         // a.	заполните массив числами вразнобой в промежутке [1, 7], используя сокращенную форму инициализации
         // b.	переставьте значения в исходном массиве в обратном порядке
@@ -119,20 +119,33 @@ public class ArrayTheme {
         System.out.println("Количество обнулённых ячеек: " + sumArrDell + " из 15");
         System.out.println();
 
-        // TODO: 28.03.2023 4.	Вывод элементов массива лесенкой в обратном порядке
+        // TODO: 28.05.2023  4.	Вывод элементов массива лесенкой в обратном порядке
         //a.	создайте массив, заполнив его в цикле большими анг. буквами по возрастанию
         //b.	отобразите его содержимое лесенкой в обратном порядке в следующем формате:
         // Z
-        //ZY   [90;60]
+        //ZY   [90;65]
         //ZYX
         //ZYXW
 
         System.out.println("4.Вывод элементов массива лесенкой в обратном порядке");
         System.out.println();
-        char[] arrChar = new char[0];
-         for (int i = 0; i < arrChar.length-1; i++) {
+        System.out.println();
+        char[] arrChar = new char[26];
+        for (char d = 0; d <= arrChar.length-1; d++) {
+            arrChar [d] = (char) (d+65);
+            System.out.print(arrChar [d]);
+        }
+        System.out.println("");
 
-         }
+        for (int i = 0; i <= arrChar.length-1; i++) {
+            for (int k = 0; k <= arrChar.length-1; k++) {
+                System.out.print(arrChar [25-k]);
+                if (k==i) {
+                    break;
+                }
+            }
+            System.out.println("");
+        }
 
 
 /*
