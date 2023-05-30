@@ -115,6 +115,17 @@ public class CyclesTheme {
         System.out.println("Обратное число " + rev);
         System.out.println("Сумма " + sum);
 
+        int numer = 1234;
+        int sume = 0;
+        System.out.print("исходное число в обратном порядке: ");
+        while(numer > 0) {
+            int digit = numer % 10;
+            System.out.print(digit);
+            sume += digit;
+            numer /= 10;
+        }
+        System.out.println("\nсумма его цифр: " + sum);
+
 
         // TODO: 06.09.2022 4. Вывод чисел на консоль в несколько строк
         //○ выведите с помощью for на консоль числа в полуинтервале [1, 24)
