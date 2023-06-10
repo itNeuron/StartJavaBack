@@ -1,5 +1,5 @@
 package com.startjava.lesson_2_3_4.array;
-
+import java.util.Arrays;
 
 import java.util.function.ToDoubleBiFunction;
 
@@ -144,12 +144,34 @@ public class ArrayTheme {
             System.out.println("");
         }
         System.out.println("");
+
         // TODO: 28.05.2023 5.	Генерация уникальных чисел
         // a.	создайте массив из 30 чисел, заполнив его в цикле случайными значениями в промежутке [60, 100)
         // b.	при этом числа повторяться не должны
         // c.	если число уже есть в массиве, сгенерите новое
         // d.	делайте это до тех пор, пока не сгенерится число, которого еще нет в массиве
         // e.	отобразите полученный массив по 10 чисел в строке, отсортировав его по возрастанию
+
+        int[] rendArray = new int[30];
+        for (int i = 0; i <= rendArray.length - 1; i++) {
+            boolean liken;
+            int rendomNumber;
+            do {
+                rendomNumber = 60 +(int) ( Math.random() * 40);
+                liken = false;
+                for (int j=0;j<i;j++) {
+                    if (rendArray[i] == rendomNumber){
+                        liken = true;
+                        break;
+                    }
+                }
+            } while (liken);
+            rendArray[i] = rendomNumber;
+            System.out.print(rendArray[i] + " ");
+            if (i == 9 | i == 19) {
+                System.out.println("");
+            }
+        }
 
 
 
